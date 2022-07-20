@@ -34,7 +34,7 @@ StringforDevice = "滅火器"
 StringforAction = "賣"
 StringforBrand = "SS"
 str1 = ""
-hollew = "123"
+hollew = "45"
 
     
 @handler.add(MessageEvent, message=TextMessage)
