@@ -49,5 +49,5 @@ def handle_message(event):
     # reply = TextSendMessage(text=f"{get_message}")  原版 : 讀取訊息後回復一樣的訊息
     line_bot_api.reply_message(event.reply_token, reply)
 
-def splitString():
+def splitString(self):
     hollew = "執行成功"
