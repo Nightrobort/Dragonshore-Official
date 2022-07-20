@@ -30,9 +30,9 @@ def callback():
 
         return "OK"
 
-StringforDevice = ""
-StringforAction = ""
-StringforBrand = ""
+StringforDevice = "滅火器"
+StringforAction = "賣"
+StringforBrand = "SS"
 
 
 @handler.add(MessageEvent, message=TextMessage)
