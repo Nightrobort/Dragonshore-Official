@@ -45,14 +45,20 @@ def handle_message(event):
     str1 = get_message.split("充電機")
     if len(str1) > 1:
         StringforDevice = "充電機"
+    else :
+        StringforDevice = ""
     str1 = ""
     str1 = get_message.split("買")
     if len(str1) > 1:
         StringforAction = "買"
+    else :
+        StringforAction = ""
     str1 = ""
     str1 = get_message.split("Mastervolt")
     if len(str1) > 1:
         StringforBrand = "Mastervolt"
+    else :
+        StringforBrand = ""
     str1 = ""
 
     # Send To Line
