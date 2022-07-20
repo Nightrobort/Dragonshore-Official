@@ -61,6 +61,15 @@ def handle_message(event):
         StringforBrand = ""
     str1 = ""
 
+    path = 'textrecord.txt'
+    with open(path, 'a') as f:
+        f.write('apple\n')
+        f.write('banana\n')
+        f.write('tomato\n')
+    f.close()
+
+    
+    
     # Send To Line
     reply = TextSendMessage("所以您是想" + StringforAction + StringforBrand + "的" + StringforDevice + "是嗎?")
     # reply = TextSendMessage(text=f"{get_message}")  原版 : 讀取訊息後回復一樣的訊息
