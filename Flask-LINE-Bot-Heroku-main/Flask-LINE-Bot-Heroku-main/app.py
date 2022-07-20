@@ -34,7 +34,7 @@ StringforDevice = ""
 StringforAction = ""
 StringforBrand = ""
 str1 = ""
-
+number22 = 0
 
     
 @handler.add(MessageEvent, message=TextMessage)
@@ -62,7 +62,9 @@ def handle_message(event):
     str1 = ""
 
     # Send To Line
-    reply = TextSendMessage("所以您是想" + StringforAction + StringforBrand + "的" + StringforDevice + "是嗎?")
+
+    reply = TextSendMessage("所以您是想" + StringforAction + StringforBrand + "的" + StringforDevice + "是嗎?"+number22)
+    number22 += 1
     # reply = TextSendMessage(text=f"{get_message}")  原版 : 讀取訊息後回復一樣的訊息
     line_bot_api.reply_message(event.reply_token, reply)
 
