@@ -61,12 +61,11 @@ def handle_message(event):
         StringforBrand = ""
     str1 = ""
 
-    path = 'textrecord.txt'
-    with open(path, 'a') as f:
+    path = '/textrecord.txt'
+    with open(path, 'w') as f:
         f.write('apple\n')
         f.write('banana\n')
         f.write('tomato\n')
-    f.close()
 
     
     
