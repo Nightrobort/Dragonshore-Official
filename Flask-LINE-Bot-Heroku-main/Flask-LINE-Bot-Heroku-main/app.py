@@ -42,7 +42,7 @@ def handle_message(event):
 
 
     get_message = event.message.text
-    splitString(get_message)
+    splitString()
 
     # Send To Line
     reply = TextSendMessage(hollew+"所以您是想" + StringforAction + StringforBrand + "的" + StringforDevice + "是嗎?")
